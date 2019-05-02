@@ -9,7 +9,7 @@ table, th, td {
 </head>
 <body>
 
-<h2>About Us</h2>
+<h2>Contact Us</h2>
 
 <table style="width:100%">
   <tr>
