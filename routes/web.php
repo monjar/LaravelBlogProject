@@ -11,10 +11,16 @@
 |
 */
 
-Route::get('/', function () {
+Route::view( '/home', 'home' );
+Route::view( '/aboutus', 'about_us' );
+Route::view( '/contact', 'contact');
+
+Route::redirect('/', '/home' );
+
+/*Route::get('/', function () {
 	return view('welcome');
 });
 
 Route::match(['get' , 'post'],'foo' , function () {
 	return 'hello world';
-});
+});*/
