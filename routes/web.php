@@ -17,6 +17,7 @@ Route::view( '/contact_us', 'contact_us');
 
 Route::redirect('/', '/home' );
 
+Route::get('/user/show' , 'UserController@show');
 /*Route::get('/', function () {
 	return view('welcome');
 });
