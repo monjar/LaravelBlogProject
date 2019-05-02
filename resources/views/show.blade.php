@@ -4,6 +4,7 @@
 <style>
 table, th, td {
   border: 1px solid black;
+  text-align : center;
 }
 </style>
 <title>Users</title>
@@ -11,21 +12,26 @@ table, th, td {
 <body>
 
 
-<table style="width:1920px">
+<table style="width:1680px">
   <tr>
-    <th colspan =3>Users</th>
+    <th colspan =4>Users</th>
   </tr>
-  	@foreach($Users as $user)
+  <tr>
+    <th >Row</th>
+    <th >First Name</th>
+    <th >Last Name</th>
+    <th >Age</th>
+  </tr>
+  	@foreach($Users as $key => $user)
     	<tr>
     		<td>
-    			{{ $user['firstname'] }}
+    			{{ $key+1 }}
     		</td>
+    		@foreach($user as $var)
     		<td>
-    			{{ $user['lastname'] }}
+    			{{ $var }}
     		</td>
-    		<td>
-    			{{ $user['age'] }}
-    		</td>
+    		@endforeach
   	</tr>
     	@endforeach
 </table>
