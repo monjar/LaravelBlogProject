@@ -13,7 +13,7 @@
 
 Route::view( '/home', 'home' );
 Route::view( '/aboutus', 'about_us' );
-Route::view( '/contact', 'contact');
+Route::view( '/contact', 'contact_us');
 
 Route::redirect('/', '/home' );
 
