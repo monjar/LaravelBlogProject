@@ -12,8 +12,8 @@
 */
 
 Route::view( '/home', 'home' );
-Route::view( '/aboutus', 'about_us' );
-Route::view( '/contact', 'contact_us');
+Route::view( '/about_us', 'about_us' );
+Route::view( '/contact_us', 'contact_us');
 
 Route::redirect('/', '/home' );
 
