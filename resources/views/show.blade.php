@@ -3,7 +3,7 @@
 <head>
 <style>
 table, th, td {
-  border: 1px solid black;
+  border: 1px solid purple;
   text-align : center;
 }
 </style>
@@ -12,7 +12,7 @@ table, th, td {
 <body>
 
 
-<table style="width:1680px">
+<table style="width:1680px" color = "blue">
   <tr>
     <th colspan =4>Users</th>
   </tr>
